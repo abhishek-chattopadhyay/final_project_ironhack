@@ -61,7 +61,7 @@ final_project_ironhack/
 1. Clone the repository
    ```bash
    git clone https://github.com/abhishek-chattopadhyay/project-4-cv.git
-   cd project-4-cv
+   cd final_project_ironhack
    ```
 2. Create a virtual environment and install dependencies:
    ```bash
