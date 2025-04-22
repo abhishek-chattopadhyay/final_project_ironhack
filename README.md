@@ -33,25 +33,26 @@ The complete workflow—from data handling and training to evaluation and deploy
 
 3. **Training Setup**:  
    - Trained for **30 epochs** with early stopping based on validation loss.  
-   - Saved the best performing model as `best_model.keras`.  
+   - Saved the best performing model as `best_model.pt`.  
 
 4. **Evaluation**:  
    - Assessed model performance using **accuracy**, **loss curves**, and a **confusion matrix**.
 
 ## 💡 Key Insights  
-- `MobileNetV2` achieved a high classification **accuracy of 96%**.  
+- `MobileNetV2` achieved a high classification **accuracy of 99%**.  
 - The model showed **minimal Type I and Type II errors**, making it highly reliable.  
 - Transfer learning significantly improved efficiency and performance, even with a moderately sized dataset.
 
 ## 🧾 Project Structure  
 ```bash
-fracture-classifier/
+final_project_ironhack/
 │
-├── data/                 # Download and keep your data here
-├── code/                 # Jupyter Notebooks for EDA, training and evaluation, best model (.keras) is here
+├── data/                 # Download the images from Kaggle and keep your images here
+├── notebooks/            # Jupyter Notebooks for image preprocessing, feature extraction and unsupervised learning, outlier detection, transfer learning using MobileNetV2 and a Streamlit app (app.py)
+├── labels/               # labels of the clusters
+├── models/               # some models are saved here as .pt format
 ├── presentation/         # Presentation to the stakeholder 
-├── README.md             # Project documentation (this file)
-├── task.md               # Task given in the project 
+├── README.md             # Project documentation (this file) 
 └── requirements.txt      # Python dependencies
 ```
 
@@ -68,11 +69,11 @@ fracture-classifier/
    pip install -r requirements.txt
    ```
 3. Download the data from the link and put it into the data folder.
-4. Run the `main.ipynb`
+4. Run the `.ipynb` files from 01 to 03.
 
 ## 📝 Extra Notes
 - This project was developed as part of the Ironhack Data Science Bootcamp.
 - Future enhancements could include:
   - Trying other models like EfficientNet, ResNet, or ensemble techniques.
-  - Expanding the dataset to include more fracture types.
+  - Expanding the dataset to include more species.
   - Deploying the model via a simple web app for demo purposes.
