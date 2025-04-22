@@ -1,10 +1,6 @@
 # 🐳 Marine Life Detection  
 ### A Computer Vision Project Combined With Unsupervised & Transfer Learning | Ironhack Data Science Bootcamp
-
-<h2 align="center">🌊 Marine Life Cluster Classification</h2>
-<p align="center">
-  <img src="./presentation/marine_life.png" alt="Marine Life Illustration" width="500"/>
-</p>
+![](./presentation/marine_life.png)
 
 ## 📌 Introduction  
 This project focuses on building a deep learning pipeline to classify marine animal images into distinct categories using transfer learning with MobileNetV2. The images are preprocessed and stored as `.pt` tensors, grouped by visual similarity through unsupervised learning. 
